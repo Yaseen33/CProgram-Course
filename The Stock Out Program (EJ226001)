@@ -1,0 +1,27 @@
+#include <stdio.h> // program by Yaseen
+
+int main()
+{
+    int a, b;
+
+    printf("Please enter the number of total pens [Shopkeeper]: \n");
+    scanf("%d", &a);
+
+    printf("Please enter the number of pens you want to buy [Customer]: \n");
+    scanf("%d", &b);
+
+    int limit = (b <= a) ? b : a;
+    int i;
+
+    for (i = 1; i <= limit; i++)
+    {
+        printf("%d (th) pen received\n", i);
+    }
+
+    if (b > a)
+    {
+        printf("Out of Stock\n");
+    }
+
+    return 0;
+}
